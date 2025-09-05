@@ -2,13 +2,51 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&family=Zain&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/base.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Elizabeth M. Greeff</title>
+    <meta name="description" content="Elizabeth M. Greeff. Course: WDD131. Home page used to access any external links.">
+    <meta name="author" content="Elizabeth M. Greeff">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD 131 - Elizabeth Greeff</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul class="links">
+                <li><a href="https://www.linkedin.com/in/elizabeth-greeff-3a02aa33a/" title="linked-in">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" title="canvas">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/53?lang=eng&id=p22#p22" title="scripture">Scripture</a></li>
+                <li><a href="#" title="final-project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Elizabeth M. Greeff</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/elizabeth-greeff.jpg" alt="Elizabeth M. Greeff" width="200">
+            <p>My name is Elizabeth, but I like to go by Lizzy. I was born and raised in Cape Town South Africa. I Am currently
+                studying full-time. I live with my family and I love hanging out with them all. I love to dance and I love to
+                paint!</p>
+        </section>
+        <section class="card">
+            <h2>Cape Town, South Africa</h2>
+            <img src="images/south-african-flag.webp" alt="South African flag" width="200">
+            <p>South Africa has the most official languages in Africa, is the only country to have hosted the Rugby, Soccer, and
+            Cricket World Cups, and is home to the oldest human remains ever discovered, with modern humans originating there.</p>
+        </section>
+
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Elizabeth M. Greeff | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
