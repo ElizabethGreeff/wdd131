@@ -95,6 +95,7 @@ main h1 {
 }
 
 .card {
+    text-align: center;
     background: none;
     border: none;
     padding: 0;
@@ -106,9 +107,8 @@ main h1 {
 }
 
 .card p {
-    text-align: center;
-    
     color: black;
+    padding: 4rem;
 }
 
 footer {
