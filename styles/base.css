@@ -85,7 +85,8 @@ main {
     margin: 1rem auto;
     max-width: 1200px;
 }
-main h1 {
+h1 {
+    grid-column: 1/4;
     text-align: center;
     background-color: var(--secondary-color);
     color: var(--accent-color);
@@ -109,6 +110,28 @@ main h1 {
 .card p {
     color: black;
     padding: 4rem;
+}
+
+.web-links {
+    text-align: center;
+    background: white;
+    grid-column: 3/4;
+    padding: 2rem;
+    
+}
+
+.web-links a {
+    text-decoration: none;
+    display: block;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: var(--heading-font);
+}
+
+.link {
+    display: block; 
 }
 
 footer {
