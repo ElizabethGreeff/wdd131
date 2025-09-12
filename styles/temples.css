@@ -1,0 +1,110 @@
+.sriracha-regular {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.zain-regular {
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #5E3023;
+    --secondary-color: #F3E9DC;
+    --accent-color: #C08552;
+    --heading-font: "Sriracha", cursive;
+    --body-font: "Zain", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary-color);
+    font-weight: bold;
+    color: var(--secondary-color);
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    background: var(--primary-color);
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 0.75rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+main h1 {
+    padding: 1rem;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    border: 1px solid var(--secondary-color);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+figure img {
+    width: 80%;
+    height: auto;
+}
+
+footer {
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary-color);
+    margin-top: 1rem;
+    color: var(--secondary-color);
+}
