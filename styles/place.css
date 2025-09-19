@@ -1,18 +1,29 @@
+.sriracha-regular {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.zain-regular {
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} 
+
 :root {
     --primary: #007749;
     --secondary: #E03C31;
     --outline: #FFB81C;
     --accent: #001489;
     --font-col: #000000;
-    --font: 'Arial', sans-serif;
+    --main-font: "Sriracha", cursive;
 }
 
 body {
     margin: 0 auto;
-    font-family: var(--font);
+    font-family: var(--main-font);
     background: var(--secondary);
     color: var(--font-col);
-    font-weight: bold;
 }
 
 header,
