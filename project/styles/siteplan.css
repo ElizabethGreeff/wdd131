@@ -1,0 +1,97 @@
+:root {
+    --primary: #3A1743;
+    --secondary: #FFB400;
+    --tertiary: #3C7A57;
+    --neutral: #FAF4E6;
+    --dark: #111111;
+
+    --font-headings: 'Righteous', cursive;
+    --font-body: 'Lato', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--neutral);
+    color: var(--dark);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background-color: var(--neutral);
+    color: white;
+    padding: 2rem 1rem;
+}
+
+header .logo {
+    max-width: 180px;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+h1,
+h2 {
+    font-family: var(--font-headings);
+    color: var(--primary);
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.color-swatch {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+
+.primary {
+    background-color: var(--primary);
+}
+
+.secondary {
+    background-color: var(--secondary);
+}
+
+.tertiary {
+    background-color: var(--tertiary);
+}
+
+.neutral {
+    background-color: var(--neutral);
+}
+
+.dark {
+    background-color: var(--dark);
+}
+
+.wireframes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.wireframes img {
+    max-width: 300px;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    background: var(--dark);
+    color: white;
+    padding: 1rem;
+}
