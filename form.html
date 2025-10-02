@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form | WDD131</title>
+    <meta name="description" content="Product review submission form for WDD131 assignment">
+    <meta name="author" content="Elizabeth M. Greeff">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="webForm">
+            <!-- Product Name -->
+            <label for="productName">Product Name:</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <!-- Overall Rating -->
+            <fieldset class="rating">
+                <legend>Overall Rating:</legend>
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5" title="5 stars">★</label>
+            
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4" title="4 stars">★</label>
+            
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3" title="3 stars">★</label>
+            
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2" title="2 stars">★</label>
+            
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1" title="1 star">★</label>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <label for="installDate">Date of Installation:</label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>Useful Features:</legend>
+                <label><input type="checkbox" id="feature1" name="features" value="durable"> Durable</label>
+                <label><input type="checkbox" id="feature2" name="features" value="lightweight"> Lightweight</label>
+                <label><input type="checkbox" id="feature3" name="features" value="efficient"> Efficient</label>
+                <label><input type="checkbox" id="feature4" name="features" value="innovative"> Innovative</label>
+            </fieldset>
+
+            <!-- Written Review -->
+            <label for="review">Written Review:</label>
+            <textarea id="review" name="review" rows="5" placeholder="Share your thoughts..."></textarea>
+
+            <!-- User Name -->
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="username">
+
+            <!-- Submit Button -->
+            <input type="submit" value="Confirm Review">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 | Elizabeth M. Greeff | WDD131</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.querySelector("#lastModified").textContent = `Last Modified: ${document.lastModified}`;
+    </script>
+</body>
+
+</html>
