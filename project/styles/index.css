@@ -1,0 +1,384 @@
+:root {
+    --primary: #3A1743;
+    /* Deep Jungle Purple */
+    --secondary: #FFB400;
+    /* Golden Yellow */
+    --tertiary: #3C7A57;
+    /* Tropical Green */
+    --neutral: #FAF4E6;
+    /* Soft Beige */
+    --dark: #111111;
+    /* Charcoal Black */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--neutral);
+    color: var(--dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/*Header*/
+header {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+    border-bottom: 3px solid var(--secondary);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary);
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: var(--secondary);
+}
+
+/*Navigation*/
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--neutral);
+    background-color: var(--tertiary);
+    padding: 0.6rem 1rem;
+    border-radius: 2rem;
+    transition: background-color 0.3s, transform 0.2s, color 0.3s;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: var(--secondary);
+    color: var(--dark);
+    transform: scale(1.05);
+}
+
+nav a.active {
+    background-color: var(--secondary);
+    color: var(--dark);
+}
+
+.hamburger {
+    display: none;
+}
+
+/*Main Layout */
+main {
+    padding: 2rem 3rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+    border-left: 5px solid var(--secondary);
+    padding-left: 10px;
+}
+
+/* Animals Grid*/
+/* Default (desktop): show grid, hide slideshow */
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .slideshow-container {
+        position: relative;
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .slide {
+        position: absolute;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out;
+        border-radius: 1rem;
+    }
+
+    .slide.active {
+        opacity: 1;
+    }
+}
+
+.animal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.animal-grid img {
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.animal-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* Location*/
+
+#location {
+    background-color: var(--neutral);
+    padding: 3rem 2rem;
+    border-top: 5px solid var(--secondary);
+}
+
+#location h2 {
+    color: var(--primary);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.location-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-text {
+    flex: 1;
+    min-width: 280px;
+    color: var(--dark);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+    flex: 1;
+    min-width: 320px;
+    border: 3px solid var(--secondary);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*Pricing Section*/
+#pricing {
+    background-color: var(--neutral);
+    padding: 3rem 2rem;
+    text-align: center;
+    
+}
+
+#pricing h2 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.pricing-intro {
+    color: var(--dark);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.pricing-table-container {
+    overflow-x: auto;
+}
+
+.pricing-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.pricing-table th {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.pricing-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    color: var(--dark);
+}
+
+.pricing-table tr:nth-child(even) {
+    background-color: #f8f4eb;
+}
+
+.pricing-table tr:hover {
+    background-color: var(--secondary);
+    color: white;
+    transition: 0.3s ease;
+}
+
+/*Restaurant Section*/
+#restaurant {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    background-color: var(--neutral);
+}
+
+.restaurant-gallery {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.top-images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.top-images img,
+.bottom-image img {
+    object-fit: cover;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.top-images img{
+    width: 250px;
+    height: 150px;
+
+}
+
+.bottom-image img {
+    width: 450px;
+    height: 150px;
+}
+
+.middle-logo .logo-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.bottom-image {
+    display: flex;
+    justify-content: center;
+}
+
+.top-images img:hover,
+.bottom-image img:hover,
+.logo-circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.restaurant-info {
+    text-align: left;
+    color: var(--dark);
+    max-width: 500px;
+}
+
+.restaurant-info h2 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.restaurant-info p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--dark);
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--tertiary);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark);
+    color: var(--neutral);
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 3px solid var(--secondary);
+}
+
+footer a {
+    color: var(--secondary);
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: var(--tertiary);
+}
+
+footer p {
+    margin: 0.5rem 0;
+}

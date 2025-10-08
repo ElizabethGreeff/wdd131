@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exotic Animal World | Home</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/small-index.css">
+    <script src="scripts/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Exotic-Animals-Logo.png" alt="Exotic Animal World Logo">
+            <h1>Exotic Animal World</h1>
+        </div>
+    
+        <nav class="navbar">
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+    
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="animal.html">Animal of the Week</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section 1: Animals of the day -->
+        <!-- Static version for desktop -->
+        <section id="animals-of-the-day" class="desktop-only">
+            <h2>Animals of the Day</h2>
+            <div class="animal-grid">
+                <img src="images/animal1.webp" alt="Animal 1">
+                <img src="images/animal2.webp" alt="Animal 2">
+                <img src="images/animal3.webp" alt="Animal 3">
+            </div>
+        </section>
+        
+        <!-- Slideshow version for mobile -->
+        <section id="animals-of-the-day-mobile" class="mobile-only">
+            <h2>Animal of the Day</h2>
+            <div class="slideshow-container">
+                <img src="images/animal1.webp" class="slide active" alt="Animal 1">
+                <img src="images/animal2.webp" class="slide" alt="Animal 2">
+                <img src="images/animal3.webp" class="slide" alt="Animal 3">
+            </div>
+        </section>
+
+        <!-- Section 2: Location -->
+        <section class="location">
+            <h2>Location</h2>
+            <div class="location-content">
+                <div class="location-text">
+                    <p>
+                        Exotic Animal World is a sanctuary for a variety of exotic animals, such as spiders, snakes, monkeys, meerkats,
+                        scorpions, many species of bird and much more. All our animals were either donated by their previous owners, or were
+                        confiscated by local authorities and given into our care. Visitors to our sanctuary can see over 700 amazing creatures
+                        who are now all ambassadors for their species and carry the message: Appreciate, Don’t Keep.
+                    </p>
+                </div>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.4699316398087!2d18.8724319!3d-33.800184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcda8260d82e533%3A0xb947ce1daff894cc!2sExotic%20Animal%20World%20(Previously%20Butterfly%20World)!5e0!3m2!1sen!2sza!4v1759931954888!5m2!1sen!2sza"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Pricing -->
+        <section id="pricing">
+            <h2>Pricing & Admission</h2>
+            <p class="pricing-intro">
+                We offer affordable entry fees so everyone can enjoy and support our mission to protect exotic wildlife.
+                Group and family discounts are available!
+            </p>
+        
+            <div class="pricing-table-container">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Ticket Type</th>
+                            <th>Price</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Adults</td>
+                            <td>R88</td>
+                            <td>Includes full access to all exhibits and educational talks</td>
+                        </tr>
+                        <tr>
+                            <td>Children (under 12)</td>
+                            <td>R49</td>
+                            <td>Must be accompanied by an adult</td>
+                        </tr>
+                        <tr>
+                            <td>Children (under 3)</td>
+                            <td>FREE!</td>
+                            <td>Most definitly needs an adult</td>
+                        </tr>
+                        <tr>
+                            <td>Students & Pensioners</td>
+                            <td>R79</td>
+                            <td>Valid ID required</td>
+                        </tr>
+                        <tr>
+                            <td>Family Package</td>
+                            <td>R225</td>
+                            <td>2 adults + 2 children</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 4: Restaurant -->
+        <section id="restaurant">
+            <div class="restaurant-gallery">
+                <div class="top-images">
+                    <a href="restaurant.html"><img src="images/cafe-lemur.webp" alt="Restaurant interior"></a>
+                    <a href="restaurant.html"><img src="images/menu-lemur.webp" alt="Menu"></a>
+                </div>
+                <div class="middle-logo">
+                    <a href="restaurant.html"><img src="images/cafe-lemur-logo.webp" alt="Restaurant logo"
+                            class="logo-circle"></a>
+                </div>
+                <div class="bottom-image">
+                    <a href="restaurant.html"><img src="images/lemur-long.webp" alt="Lemurs"></a>
+                </div>
+            </div>
+        
+            <div class="restaurant-info">
+                <h2>Visit Café Lemur</h2>
+                <p>
+                    After exploring the wonders of Exotic Animal World, unwind at our on-site Café Lemur.
+                    Enjoy fresh, locally sourced meals surrounded by lush greenery and the soothing sounds of nature.
+                    Every purchase helps fund our animal rehabilitation efforts — so you can dine with purpose and passion.
+                </p>
+                <a href="restaurant.html" class="cta-button">Explore the Menu</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Exotic Animal World. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
