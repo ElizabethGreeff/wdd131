@@ -18,4 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     setInterval(showNextSlide, 4000);
+
+    document.getElementById("btn-2").addEventListener("click", function () {
+        alert("Press Ctrl + D (Windows) or Cmd + D (Mac) to bookmark this page!");
+    });
 });
