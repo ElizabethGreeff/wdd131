@@ -93,8 +93,79 @@ main {
     padding: 0 1.5rem;
 }
 
-/*Animals section*/
+/*Menu section*/
+.menu-page {
+    background-color: var(--neutral);
+    text-align: center;
+    padding: 2rem 1rem;
+}
 
+.menu-sections {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.menu-section {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 550px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section h2 {
+    color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.menu-image {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.menu-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.menu-link:hover img {
+    transform: scale(1.03);
+}
+
+/* --- Button --- */
+.menu-button {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--secondary);
+    color: var(--dark);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-button:hover {
+    background-color: var(--tertiary);
+    color: var(--neutral);
+    transform: translateY(-2px);
+}
 
 /* Footer */
 footer {

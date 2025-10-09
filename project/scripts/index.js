@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     function showNextSlide() {
-    if (slides.length === 0) return; // Skip if no slideshow (desktop)
+    if (slides.length === 0) return; 
     slides[currentSlide].classList.remove("active");
     currentSlide = (currentSlide + 1) % slides.length;
     slides[currentSlide].classList.add("active");
@@ -19,7 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setInterval(showNextSlide, 4000);
 
-    document.getElementById("btn-2").addEventListener("click", function () {
-        alert("Press Ctrl + D (Windows) or Cmd + D (Mac) to bookmark this page!");
-    });
+    const bookmarkBtn = document.getElementById("btn-2");
+    if (bookmarkBtn) {
+        bookmarkBtn.addEventListener("click", function () {
+            alert("Press Ctrl + D (Windows) or Cmd + D (Mac) to bookmark this page!");
+        });
+    }
 });

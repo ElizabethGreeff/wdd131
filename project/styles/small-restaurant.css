@@ -127,8 +127,23 @@
         padding: 0 1rem;
     }
 
-    /*Animals*/
-    
+    /*Menu Section*/
+    .menu-sections {
+        flex-direction: column;
+    }
+
+    .menu-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .menu-image {
+        width: 95%;
+    }
+
+    .menu-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.95rem;
+    }    
 
     footer {
         font-size: 0.8rem;
