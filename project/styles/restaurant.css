@@ -9,6 +9,8 @@
     /* Soft Beige */
     --dark: #111111;
     /* Charcoal Black */
+    --body-font: "Alan Sans", sans-serif;
+    --heading-font: "Marhey", sans-serif;
 }
 
 * {
@@ -18,7 +20,7 @@
 }
 
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--body-font);
     background-color: var(--neutral);
     color: var(--dark);
     line-height: 1.6;
@@ -38,6 +40,7 @@ header {
 }
 
 .logo {
+    font-family: var(--heading-font);
     display: flex;
     align-items: center;
     gap: 1rem;
